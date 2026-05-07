@@ -349,6 +349,14 @@
   }
   .writing-band .sec-title { color: var(--black); margin-bottom: 8px; font-size: clamp(28px, 3.5vw, 44px); font-weight: 700; letter-spacing: -0.03em; }
   .writing-band .sec-desc { color: var(--gray-600); margin-bottom: 40px; font-size: 15px; }
+  .sec-desc-nowrap { white-space: nowrap; }
+  .sub-card-grid { display: grid; gap: 16px; margin-top: 20px; }
+  .sub-card-grid-2 { grid-template-columns: 1fr 1fr; }
+  .sub-card-grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+  @media (max-width: 768px) {
+    .sec-desc-nowrap { white-space: normal; }
+    .sub-card-grid-2, .sub-card-grid-3 { grid-template-columns: 1fr; }
+  }
   .writing-band .chip { background: var(--blue-light); color: var(--blue); margin-bottom: 14px; }
   .writing-grid {
     display: grid;
@@ -873,7 +881,7 @@
   <div class="section-header">
     <div class="chip">온라인 플랫폼</div>
     <h2 class="sec-title">교육 정보 공유를 위한<br><span class="blue">온라인 플랫폼 운영</span></h2>
-    <p class="sec-desc" style="white-space:nowrap;">시공간에 한계 없이 학습하고 연구하며 교육정보를 공유하는 초등교사를 위해 온라인 플랫폼을 운영합니다.</p>
+    <p class="sec-desc sec-desc-nowrap">시공간에 한계 없이 학습하고 연구하며 교육정보를 공유하는 초등교사를 위해 온라인 플랫폼을 운영합니다.</p>
   </div>
 
   <!-- 수치 그리드 -->
@@ -1046,7 +1054,7 @@
       <div class="prog-tag">문화</div>
       <div class="prog-name">공간사업</div>
       <p class="prog-desc">교사의 정서를 돌보고 다양한 문화와 연결하는 문화사업을 통해 안전한 공간에서 고요한 시간, 삶을 돌아보는 시간, 스스로에게 집중하는 시간, 여러 문화 콘텐츠와 연결되는 시간을 마련했습니다.</p>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px;">
+      <div class="sub-card-grid sub-card-grid-2">
         <div style="background:var(--gray-100);border-radius:16px;padding:24px;">
           <div style="font-size:16px;font-weight:700;margin-bottom:6px;">신데렐라 서점</div>
           <div style="font-size:28px;font-weight:900;color:var(--blue);">7<span style="font-size:16px;font-weight:500;color:var(--black);">회</span></div>
@@ -1080,7 +1088,7 @@
       <div class="prog-tag">문화</div>
       <div class="prog-name">쓰는교사</div>
       <p class="prog-desc">교사의 지속적인 글쓰기를 통해 나를 돌아보고 성장을 조력하는 프로젝트로 교육적 단상을 일기로 풀어내는 교단일기클럽, 고전문학 안에서 지혜를 길어 올리는 탐구클럽, 나의 생각을 논리적으로 정리하고 전달하기 위한 500자 클럽이 운영되고 있습니다.</p>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:20px;">
+      <div class="sub-card-grid sub-card-grid-3">
         <div style="background:var(--gray-100);border-radius:16px;padding:24px;">
           <div style="font-size:16px;font-weight:700;margin-bottom:6px;">교단일기클럽</div>
           <p style="font-size:13px;color:var(--gray-600);margin-bottom:14px;">교사의 일상과 교실을 기록하며 나를 돌아보는 프로그램</p>
@@ -1126,10 +1134,10 @@
     <div class="prog-card">
       <div class="prog-tag">출판</div>
       <div class="prog-name">쓰는교사 필사집</div>
-      <p class="prog-desc">교사가 쓴 글을 모아 엮은 쓰는교사 필사집을 출간합니다. 50명의 집필진이 함께 만드는 이 책은 교사의 삶과 교실 이야기를 담은 소중한 기록입니다.</p>
+      <p class="prog-desc">문화 프로그램 <쓰는교사>에 참여하신 선생님들의 글을 모아 엮은 쓰는교사 필사집을 출간했습니다. 필사집에는 수많은 선생님이 교실에서 길어올린 진솔한 에피소드와 단단한 통찰이 담겨 있습니다. 하루 한 장, 선생님의 문장을 손으로 옮겨 적는 시간을 통해 온전히 '나 자신'을 마주하며 회복하는 시간를 드리고자 합니다.</p>
       <div class="prog-stat">50<span style="font-size:16px;font-weight:500">명</span></div>
-      <div class="prog-stat-lbl">참여 집필진 · 26년 2월 500부 펀딩 예정</div>
-      <div class="prog-review-btn">📖 쓰는교사 필사집 보러가기 →</div>
+      <div class="prog-stat-lbl">참여 집필진</div>
+      <a href="https://search.shopping.naver.com/book/catalog/59604402576?cat_id=50005544&frm=PBOKPRO&query=%EC%93%B0%EB%8A%94+%EA%B5%90%EC%82%AC+%EC%84%A0%EC%83%9D%EB%8B%98%EC%9D%84+%EC%9C%84%ED%95%9C+%ED%95%98%EB%A3%A8+%ED%95%9C+%EC%9E%A5+%ED%95%84%EC%82%AC%EC%A7%91&NaPm=ct%3Dmouqtkg8%7Cci%3D7c4be4fde2cdc37cd919b255b22072811f64115e%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3D571cec16269719fff65549ca3538c86ba543e470" target="_blank" style="text-decoration:none;color:inherit;display:block;"><div class="prog-review-btn">📖 &lt;쓰는 교사 선생님을 위한 하루 한 장 필사집&gt; 보러가기 →</div></a>
     </div>
   </div>
 </div>
@@ -1457,7 +1465,7 @@ function openReview(key) {
   const list = document.getElementById('modalReviews');
   list.innerHTML = '';
   const isListType = data.type === 'list';
-  const avatars = ['👍🏻','💙','⭐️','👩‍🏫','🧑‍🏫','👩‍🏫'];
+  const avatars = ['👩🏻‍🏫','🧑🏻‍🏫','👨🏻‍🏫','👩‍🏫','🧑‍🏫','👩‍🏫'];
   const colors = ['bubble-c0','bubble-c1','bubble-c2','bubble-c3'];
   data.items.forEach((item, i) => {
     const el = document.createElement('div');
@@ -1471,7 +1479,7 @@ function openReview(key) {
       el.innerHTML = `
         <div class="bubble-avatar">${avatars[i % avatars.length]}</div>
         <div class="bubble ${color}">
-          <div>${item.quote}</div>
+          <div>${item.quote.replace(/^([^-]+) - /, '<span style="font-weight:700;display:block;margin-bottom:4px;">$1</span>')}</div>
           ${item.author ? `<div class="bubble-author">— ${item.author}</div>` : ''}
         </div>`;
     }
