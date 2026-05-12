@@ -944,9 +944,15 @@
     <div class="pf-text-card">
       <div class="pf-text-tag">기술연구</div>
       <p class="pf-text">인디스쿨의 안정적인 서비스는 직접 연구하고 개발하며 서버를 운영하는 현직 초등교사들에 의해 운영되고 있습니다. 회원들의 소중한 교육자료와 개인정보를 안정하게 보호하면서 교육정보가 안정적으로 공유될 수 있도록 지속적인 연구와 개발, 개선에 힘쏟고 있습니다.</p>
-      <div class="pf-inline-stat">
-        <span class="pf-inline-num">##<span style="font-size:16px;font-weight:500">회</span></span>
-        <span class="pf-inline-lbl">기술연구팀 집중작업</span>
+      <div style="display:flex;gap:20px;">
+        <div class="pf-inline-stat">
+          <span class="pf-inline-num">105<span style="font-size:16px;font-weight:500">회</span></span>
+          <span class="pf-inline-lbl">총 배포 수</span>
+        </div>
+        <div class="pf-inline-stat">
+          <span class="pf-inline-num">5,746<span style="font-size:16px;font-weight:500">회</span></span>
+          <span class="pf-inline-lbl">코드 변경 수</span>
+        </div>
       </div>
     </div>
     <div class="pf-text-card">
@@ -1178,24 +1184,29 @@
     <h2 class="sec-title">신뢰와 체계 속에<br><span class="blue">투명하게 조직을 운영합니다</span></h2>
   </div>
   <div class="programs-grid">
-    <div class="prog-card">
-      <div class="prog-tag">운영</div>
-      <div class="prog-name">운영회의 및 기구 운영</div>
-      <p class="prog-desc">매월 2회 온라인 회의 운영, 분기별 오프라인 워크숍 등을 위해 운영위원들이 긴밀하게 연결되어 소통합니다.</p>
-    </div>
-    <div class="prog-card">
-      <div class="prog-tag">운영</div>
-      <div class="prog-name">회계 및 운영</div>
-      <p class="prog-desc">회원 관리, 회계, 비영리 법인 및 공익 법인 의무를 이행합니다.</p>
-    </div>
     <div class="prog-card" style="grid-column: 1 / -1;">
-      <div class="prog-tag">후원</div>
-      <div class="prog-name">후원관리</div>
-      <p class="prog-desc">후원자는 인디스쿨이 정부나 기관의 지원없이 독립적인 공간으로 존재할 수 있도록 하는 힘입니다. 그런 후원자를 위한 다양한 이벤트를 진행합니다. 또한 연말 정산을 위한 후원금 영수증을 발행합니다.</p>
-      <div style="margin-top:16px;background:var(--gray-100);border-radius:16px;padding:20px;">
-        <div style="font-size:14px;font-weight:700;margin-bottom:6px;">후원자 이벤트</div>
-        <p style="font-size:13px;color:var(--gray-600);line-height:1.7;">2026 달력 이벤트: 10,000부 제작 및 발송</p>
+      <div class="prog-tag">운영</div>
+      <div class="prog-name">법인 운영을 위한 기구 운영</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px;">
+        <div style="background:var(--gray-100);border-radius:16px;padding:20px;">
+          <div style="font-size:15px;font-weight:700;margin-bottom:8px;">총회와 이사회</div>
+          <p style="font-size:13px;color:var(--gray-600);line-height:1.7;margin:0;">매년 1회 정기 총회와 정기(임시) 이사회를 개최하여 체계적으로 인디스쿨 법인을 운영하고 있습니다.</p>
+        </div>
+        <div style="background:var(--gray-100);border-radius:16px;padding:20px;">
+          <div style="font-size:15px;font-weight:700;margin-bottom:8px;">운영위원회</div>
+          <p style="font-size:13px;color:var(--gray-600);line-height:1.7;margin:0;">매월 2회 온라인 회의 운영, 분기별 오프라인 워크숍 등을 위해 운영위원들이 긴밀하게 연결되어 소통합니다.</p>
+        </div>
       </div>
+    </div>
+    <div class="prog-card">
+      <div class="prog-tag">운영</div>
+      <div class="prog-name">회계 및 법인 운영</div>
+      <p class="prog-desc">인디스쿨은 공익법인회계기준에 따른 회계 관리를 하고 있으며, 법인의 예산 편성 및 집행규정에 따라 예산을 집행하고 있습니다. 공익법인의 책무에 맞는 관련 법령을 준수하며 목적사업을 성실히 수행하고 있습니다.</p>
+    </div>
+    <div class="prog-card">
+      <div class="prog-tag">후원</div>
+      <div class="prog-name">후원회원 관리</div>
+      <p class="prog-desc">후원회원은 인디스쿨이 정부나 기관의 지원없이 독립적인 공간으로 존재할 수 있도록 하는 힘입니다. 후원회원으로 가입하시면, 매분기 후원레터로 인디스쿨 소식을 보내드리며, 더불어 연말정산을 위한 후원금 영수증을 받으실 수 있습니다.</p>
     </div>
   </div>
 </div>
@@ -1280,7 +1291,7 @@
 
     const expenseLabels = ['분배비','사업수행 인건비','사업수행 시설비용','사업수행 기타비용','법인운영 인건비','법인운영 시설비용','법인운영 기타비용'];
     const expenseData   = [5711364, 246250533, 62560197, 330579723, 36511770, 24794891, 181839752];
-    const expenseColors = ['#e8f2ff','#0078ff','#4da6ff','#80c1ff','#b3daff','#cce8ff','#d6edff'];
+    const expenseColors = ['#fdeef3','#c9184a','#e05c7a','#e8849c','#f0a8b8','#f5c5d0','#f9dde7'];
 
     const chartOpts = {
       type: 'doughnut',
@@ -1363,7 +1374,7 @@
     <div class="review-modal-title" style="font-size:20px;font-weight:800;margin:10px 0 20px;">2025년 결산 자세히 보기</div>
 
     <!-- 운영성과표 -->
-    <div style="font-size:15px;font-weight:700;color:var(--blue);margin-bottom:10px;padding-bottom:8px;border-bottom:2px solid var(--blue);">2025 운영성과표</div>
+    <div style="font-size:15px;font-weight:700;color:var(--blue);margin-bottom:10px;padding-bottom:8px;border-bottom:2px solid var(--blue);">2025 요약 운영성과표</div>
     <table style="width:100%;border-collapse:collapse;font-size:13px;margin-bottom:28px;table-layout:fixed;">
       <colgroup><col style="width:160px;"><col><col style="width:120px;"></colgroup>
       <thead><tr style="border-bottom:1px solid var(--gray-200);">
@@ -1393,7 +1404,7 @@
     </table>
 
     <!-- 재무상태표 -->
-    <div style="font-size:15px;font-weight:700;color:var(--blue);margin-bottom:10px;padding-bottom:8px;border-bottom:2px solid var(--blue);">2025 재무상태표</div>
+    <div style="font-size:15px;font-weight:700;color:var(--blue);margin-bottom:10px;padding-bottom:8px;border-bottom:2px solid var(--blue);">2025 요약 재무상태표</div>
     <table style="width:100%;border-collapse:collapse;font-size:13px;table-layout:fixed;">
       <colgroup><col style="width:160px;"><col><col style="width:120px;"></colgroup>
       <thead><tr style="border-bottom:1px solid var(--gray-200);">
